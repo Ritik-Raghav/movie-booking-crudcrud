@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #header {
+            text-align: center;
+            justify-content: center;
+            margin: 20px;
+        }
+        .mainBody {
+            margin: 20px;
+        }
+        button {
+            margin-left: 10px;
+        }
+    </style>
+    <title>Movie Booking</title>
+  </head>
+  <body style="margin: 0">
+    <div id="header">
+      <h1 id="main-heading" style="margin: 0">Movie Booking</h1>
+      <p>Total Bookings: <span id="bookingNum">0</span></p>
+      <label for="filter">FindSlot :</label>
+      <input id="filter" type="text" placeholder="Search slots..." />
+    </div>
+    <div class="mainBody">
+      <form>
+        <label for="userName">User Name :</label>
+        <input type="text" name="userName" id="userName" />
+        <label for="seatNumber">Seat Number :</label>
+        <input type="number" name="seatNumber" id="seatNumber" />
+        <button type="submit">ADD</button>
+      </form>
+      <ul id="list">
+        <h1 id="nothing">Nothing Present</h1>
+      </ul>
+      
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+</html>
